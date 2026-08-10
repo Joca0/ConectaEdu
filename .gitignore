@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Maven
+target/
+**/target/
+
+# IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated
+.sts4-cache
+.springBeans
+
+# Outros arquivos que não são código
+HELP.md
+mvnw
+mvnw.cmd
+.mvn/
