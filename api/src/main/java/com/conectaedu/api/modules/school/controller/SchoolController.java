@@ -15,13 +15,13 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/v1/users")
+@RequestMapping("/api/v1/school")
 @RequiredArgsConstructor
 public class SchoolController {
      private final ISchoolFacade  schoolFacade;
 
      @PostMapping
-     public ResponseEntity<SchoolCreationResponseDTO> createSchool(@RequestBody @Valid SchoolUpdateRequestDTO request) {
+     public ResponseEntity<SchoolCreationResponseDTO> createSchool(@RequestBody SchoolCreationRequestDTO request) {
          return ResponseEntity.status(HttpStatus.CREATED).body(schoolFacade.createSchool(request));
      }
 

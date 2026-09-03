@@ -9,8 +9,8 @@ public record SchoolResponseDTO(
         String name,
         String director,
         String address,
-        String latitude,
-        String longitude
+        Double latitude,
+        Double longitude
 ) {
     public SchoolResponseDTO(School school) {
         this(school.getId(), school.getName(), school.getDirector(), school.getAddress(), school.getLatitude(), school.getLongitude());
